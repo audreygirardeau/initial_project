@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="fr">
+<meta charset="utf-8">
+    <title>Administration - Contact</title>
+</head>
+<body>
+    <header> <!-- entête -->
+        <!-- logo -->
+        <img src="../images/voiture.jpg" height="50" width="50" alt="logo" title="logo">
+        <!-- navigation-->
+        <nav style="background:red;"> 
+            <ul style="border:5px solid blue";>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="pages/liste-etudiants.html">Liste d'étudiants</a>
+                </li>
+                <li>
+                    <a href="pages/administration.html">Administration</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!-- contenu -->
+        <form> <!-- formumaire de contact -->
+            <div>
+                <label for="nom">Votre nom : </label>
+                <input type="text" id="nom" value="Votre nom" placeholder="Votre nom" name="nom" >
+            </div>
+            <div>
+                <label for="prenom">Votre prénom : </label>
+                <input type="text" id="prenom" value="Votre prénom" placeholder="Votre prénom" name="prenom">
+            </div>
+            <div>
+                <label for="email">Votre e-mail : </label>
+                <input type="text" id="email" value="Votre email" placeholder="Votre email" name="email">
+            </div>
+            <div>
+                <label for="civilite">Civilité : </label>
+                <input type="radio" value="m." name="civilite" checked=""><span>M.</span>
+                <input type="radio" value="mme" name="civilite"><span>Mme</span>
+            </div>
+            <div>
+                <label for="voiture">Voitures : </label>
+                <input type="checkbox" value="lambo" name="voiture1">Lamborgini
+                <input type="checkbox" value="jeremy" name="voiture2" checked="">Ferrari
+                <input type="checkbox" value="" name="voiture3">Nissan
+            </div>
+            <div>
+                <label for="hungry"> A manger </label>
+                <select id="hungry">
+                    <option value="md_do">Mc Donalds</option>
+                    <option value="quick">Quick</option>
+                    <option value="kfc">KFC</option>
+                    <option value="burger_king">Burger King</option>
+                </select>
+            
+            <div>
+                <label for="stylos"> Choix stylos </label>
+                <select id="stylos" multiple="3">
+                    <option value="rouge" selected="">rouge</option>
+                    <option value="noir">noir</option>
+                    <option value="bleu" selected="">bleu</option>
+                    <option value="vert" selected="">vert</option>
+                    <option value="orange">orange</option>
+                    <option value="rose">rose</option>
+                </select>
+            <div>
+                
+            </div>
+             <div>
+                <label for="sujet"> Sujet: </label>
+                <textarea name"sujet" value"sujet">
+                </textarea><br>
+    
+                <input type="submit" value="Soumettre" />
+            </div>
+        </form>
+    </main>  
+
+    <footer></footer> 
+
+</body>
+</html>
